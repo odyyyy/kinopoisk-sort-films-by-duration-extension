@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Кинопоиск: сортировка фильмов по продолжительности",
+    "version": "1.0",
+    "description": "Возвращает на Кинопоиск функцию сортировки фильмов по их продолжительности на странице «Буду смотреть»",
+    "icons": {
+        "128": "img/128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://www.kinopoisk.ru/*"
+            ],
+            "js": [
+                "ui.js",
+                "sort.js",
+                "load_films.js",
+                "main.js"
+            ],
+            "type": "module"
+        }
+    ],
+    "permissions": [
+        "activeTab"
+    ]
+}

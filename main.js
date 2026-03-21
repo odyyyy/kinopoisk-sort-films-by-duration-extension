@@ -1,0 +1,5 @@
+function main() {
+  setupExtensionUI();
+}
+
+main();
