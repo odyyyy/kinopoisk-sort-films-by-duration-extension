@@ -1,5 +1,5 @@
 function setupExtensionUI() {
-  const parent = document.querySelector(".quickAdd");
+  const parent = document.querySelector(".news");
   if (!parent) return;
 
   addLoadAllFilmsButton(parent);
